@@ -1,0 +1,119 @@
+.recent {
+  background: #f7f7f7;
+
+  &-wrapper {
+    .card-wrapper {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      width: 296px;
+      background: #fff;
+      border: 1px solid #eaeaea;
+      border-radius: 4px;
+      overflow: hidden;
+
+      &__image {
+        img {
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+          display: block;
+        }
+      }
+
+      &__body {
+        height: 93px;
+        padding: 13px;
+
+        h3 {
+          font-family: "Lora", serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          margin-bottom: 6px;
+          color: #2e2e2e;
+        }
+
+        p {
+          font-family: "Oxygen", sans-serif;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 19px;
+          color: #7a7a7a;
+        }
+      }
+
+      &__footer {
+        border-top: 2px solid #efefef;
+        height: 48px;
+        background: #fcfcfc;
+        display: flex;
+        align-items: center;
+        padding: 0 13px;
+
+        .footer__profile {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+
+          .footer__author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+              width: 26px;
+              height: 26px;
+              border-radius: 50%;
+            }
+
+            p {
+              font-family: "Oxygen", sans-serif;
+              font-size: 13px;
+              color: #2e2e2e;
+            }
+          }
+
+          span {
+            font-family: "Oxygen", sans-serif;
+            font-size: 12px;
+            color: #9a9a9a;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .recent-wrapper .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    .card {
+      width: 100%;
+      img {
+        height: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .recent-wrapper .card-wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .recent-wrapper .card-wrapper .card {
+    width: 100%;
+
+    img {
+      height: 180px;
+    }
+  }
+}

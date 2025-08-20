@@ -1,0 +1,41 @@
+.hero {
+  height: 500px;
+  background: gray;
+  background: url("../assets/hero_image.png") no-repeat center/cover;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+
+  h1 {
+    margin-top: 100px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: 'Lora', sans-serif;
+    font-weight: 400;
+  }
+
+  p {
+    margin-top: 20px;
+    margin-bottom:30px;
+    color: #FFFFFFA1;
+    font-size: 17px;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  button {
+    width: 167px;
+    height: 44px;
+    font-size: 13px;
+    border: none;
+    border-radius: 3px;
+    background: #DD783F;
+    transition: .3s;
+    color: white;
+    &:hover{
+      border: 1px solid #DD783F;
+      background: transparent;
+      
+    }
+  }
+}
